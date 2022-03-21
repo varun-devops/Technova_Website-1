@@ -679,6 +679,11 @@ figcaption {
   text-align: center;
 }
 
+.btn-join a{
+  text-decoration: none;
+  color: #409db5;
+}
+
 .btn-join:hover {
   background-color: #eee;
 }
