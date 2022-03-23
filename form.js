@@ -2,6 +2,7 @@ const reset = () => {
   $("#tabform")[0].reset();
 };
 
+form submit(){
 console.log("HI");
 const submit = () => {
   var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
@@ -12,11 +13,11 @@ const submit = () => {
 
     return false;
   }
-  if ($("#mail").val().trim() == "") {
+  if ($("#email").val().trim() == "") {
     $("#mailErr").html("Please enter required field!");
     return false;
   }
-  if ($("#mail").val().trim() == "") {
+  if ($("#email").val().trim() == "") {
     $("#mailErr").html("Please enter required field!");
     return false;
   }
@@ -26,7 +27,7 @@ const submit = () => {
     return false;
   }
 
-  if ($("#programme").val().trim() == "") {
+  if ($("#program").val().trim() == "") {
     $("#programmeErr").html("Please enter required field!");
     return false;
   }
@@ -42,11 +43,7 @@ const submit = () => {
     $("#numberErr").html("Please enter required field!");
     return false;
   }
-  // if (filter.test($("#number").val().trim()) ) {
-  //       $("#numberErr").html("Invalid contact number !!!");
-
-  //       return false;
-  //   }
+  
   if ($("#interests").val().trim() == "") {
     $("#interestErr").html("Please enter required field!");
     return false;
